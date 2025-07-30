@@ -124,14 +124,14 @@ Siga as instruções de formato para cada campo solicitado (ex: MANHA para horá
 
 ```Python
 
-********** INSERIR NAS PERGUNTAS A SEGUIR (NÃO UTILIZAR ACENTUAÇÕES): \
-... \
-*********** \
-HORARIO: TARDE \
-MES: JULHO \
-TEMPERATURA: FRIO \
-VALOR MÉDIO: 100+ \
-IDADE: 30+ \
+********** INSERIR NAS PERGUNTAS A SEGUIR (NÃO UTILIZAR ACENTUAÇÕES): 
+... 
+*********** 
+HORARIO: TARDE 
+MES: JULHO 
+TEMPERATURA: FRIO 
+VALOR MÉDIO: 100+ 
+IDADE: 30+ 
 SEXO: M
 ```
 
