@@ -145,7 +145,7 @@ Após inserir os dados, o sistema irá gerar e exibir o relatório final.
 ============================================================
 ```
 
-## dissected Código Dissecado: Entendendo as Partes
+## 🗒️ Código Dissecado: Entendendo as Partes
 
 O código é dividido em quatro partes lógicas para facilitar a compreensão.
 
@@ -291,10 +291,11 @@ except Exception as e:
 
 ```
 
+## Opção B: Usar uma nova Planilha Google Sheets ##
+
 ```Python
 
 ==============================================================================
-Opção B: Usar uma nova Planilha Google Sheets
 
 Se preferir, suba sua tabela para o Google Sheets, compartilhe com "Qualquer pessoa com o link" 
 e ajuste a URL:
