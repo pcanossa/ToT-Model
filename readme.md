@@ -38,7 +38,7 @@ Para executar este projeto em sua máquina local, siga os passos abaixo.
 
 2. Abra seu terminal ou prompt de comando.
 
-3. Instale as bibliotecas necessárias usando `pip:` \
+3. Instale as bibliotecas necessárias usando `pip:` 
 
 
 ```bash
@@ -233,7 +233,7 @@ modelos_e_colunas = {
 } 
 ```
 
-Pronto! O orquestrador na Parte 3 irá automaticamente incluir este novo modelo em sua análise, e o relatório final mostrará a predição para Analise_Case_1 e Analise_Case_2.
+Pronto! O orquestrador na Parte 3 irá automaticamente incluir este novo modelo em sua análise, e o relatório final mostrará a predição para ``Analise_Case_1`` e ``Analise_Case_2``.
 
 
 ## 🔬 Adaptando o Projeto Para Sua Própria Análise (Guia Principal)
@@ -274,12 +274,21 @@ Vá para a **PARTE 1** do script e altere a forma como os dados são carregados 
 
 ```Python
 
-==============================================================================
-Opção A: Carregar um arquivo CSV local
+# ==============================================================================
+# PARTE 1: CONFIGURAÇÃO E CARREGAMENTO DE DADOS
+# ==============================================================================
+import pandas as pd
+# ... (o resto do código)
 
-Python
+print("Passo 1: Carregando as bases de conhecimento...")
 
-df_meus_dados = pd.read_csv('C:/CAMINHO_DO_ARQUIVO_CSV/ARQUIVO.csv') 
+# Carregue seu arquivo CSV local. Mude o nome do arquivo para o seu.
+try:
+    df_meus_dados = pd.read_csv('C:/CAMINHO_DO_ARQUIVO_CSV/ARQUIVO.csv') # <-- ALTERE AQUI
+    print("Sucesso! Sua tabela foi carregada.\n")
+except Exception as e:
+    print(f"Erro ao carregar o arquivo: {e}")
+
 ```
 
 ```Python
@@ -309,21 +318,22 @@ Na **PARTE 2**, você precisa dizer à função de treinamento qual é a sua **c
 
 **Como editar o código (PARTE 2):**
 
-- **Antes:** \
-
-# Treinando um modelo para cada Case \
-``modelo_case1, colunas_case1 = treinar_modelo_especialista(df_product_cases, 'PRODUTO')`` \
-
-
-- **Depois (para nosso exemplo de Risco de Crédito):** \
-
-# Treinando um modelo para os Meus Dados \
+- **Antes:** 
 
 ```Python
-modelo_case1, colunas_case1 = treinar_modelo_especialista(df_meus_dados, 'RISCO_CREDITO') # <-- ALTERE AQUI \
-print("- Modelo Especialista de Análise de Crédito treinado.") \
+
+# Treinando um modelo para cada Case
+modelo_case1, colunas_case1 = treinar_modelo_especialista(df_product_cases, 'PRODUTO')
 ```
 
+- **Depois:**
+
+```Python
+
+# Treinando um modelo para os Meus Dados
+modelo_case1, colunas_case1 = treinar_modelo_especialista(df_meus_dados, 'RISCO_CREDITO') # <-- ALTERE AQUI
+print("- Modelo Especialista de Análise de Crédito treinado.")
+```
 
 ### Passo 4: Atualize a Coleta de Dados para Predição
 
