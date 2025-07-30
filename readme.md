@@ -26,7 +26,7 @@ Para executar este projeto em sua máquina local, siga os passos abaixo.
 
 - **Python 3.x**
 
-- As seguintes bibliotecas Python:
+As seguintes bibliotecas Python:
 
 - **``pandas``**
 
