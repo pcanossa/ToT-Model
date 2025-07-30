@@ -354,4 +354,3 @@ TIPO_MORADIA (ex: Alugada, Propria): Alugada \
 ============================================================
 
 O resultado Alto é a predição do modelo para a sua coluna RISCO_CREDITO.
-
